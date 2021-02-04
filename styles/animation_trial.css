@@ -1,0 +1,100 @@
+html{background-color: rgb(152, 208, 240);color: whitesmoke;}
+
+h1{font-family: hachi maru pop;}
+body{font-size: 20pt;}
+.wrap{text-align: center;}
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 35%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 300px;
+    height: 300px;
+    background-color: aliceblue;  
+}
+
+.eye1{background: black;width: 50px;height: 50px;}
+.eye2{background: black;width: 50px;height: 50px;}
+.eye1,.eye2{border-radius: 50%;height: 25%;margin-bottom: 40%;}
+
+.brow{
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    background: blue;
+    margin-left: 65%;
+}
+
+.brow1{
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    margin-right: 65%;
+}
+
+.brow,.brow1{
+    height: 20px;
+    width: 80px;
+    margin-bottom: 70%;
+    border-radius:  70% 70% 0% 0%;
+    background: brown;
+}
+
+.mouth{
+    width: 150px;
+    height: 100px;
+    margin-top: 50%;
+    border-radius: 0 0 150px 150px; 
+    background-color: red;
+}
+
+.circle1,.circle2{
+    display: flex;
+    position: absolute;
+    background:aliceblue;
+    width: 300px;
+    height: 70px;
+    outline: 50%;
+    border-radius: 50%;
+    
+}
+.circle1{margin-top: 100%;}
+.circle2{margin-bottom:100%;}
+
+
+
+/*Animations below.*/
+
+#wink{animation-name: wink;animation-duration: 3s;animation-iteration-count: 4;}
+@keyframes wink{
+    0%{
+        border-radius: 50%;
+        height: 25%;
+        margin-bottom: 40%;
+    }
+    50%{
+        height: 10px;
+    }
+    100%{
+        border-radius: 50%;
+        height: 25%;
+        margin-bottom: 40%;
+    }
+}
+
+#wink1{animation-name: wink1;animation-duration: 3s;animation-iteration-count: 4;}
+@keyframes wink1{
+    0%{
+        margin-bottom: 70%;
+    }
+    50%{
+        margin-bottom: 50%;
+    }
+    100%{
+        margin-bottom: 70%;
+    }
+}
