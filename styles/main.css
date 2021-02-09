@@ -66,41 +66,36 @@ body{font-size: 20pt;}
 }
 
 #gridcontainer{
-    display: grid;
-    width: 300px;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-areas:'one two three';
-    justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
+    
+    
 }
 
-#product1{
-    grid-area: one;
-}
 
-#product2{
-    grid-area: two;
-}
 
-#product3{
-    grid-area: three;
+#gridcontainer> img{
+    align-items: center;
 }
 
 #product1> img{
     object-fit: cover;
-    width: 100%;
-    max-height: 100%;
+    width: 100px;
+    max-height: 100px;
 }
 
 #product2> img{
     object-fit: cover;
-    width: 100%;
-    max-height: 100%;
+    width: 100px;
+    max-height: 100px;
+   
 }
 
 #product3> img{
     object-fit: cover;
-    width: 100%;
-    max-height: 100%;
+    width: 100px;
+    max-height: 100px;
+    
 }
 
 #survey{background-color:pink;}
